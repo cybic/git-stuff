@@ -1,0 +1,17 @@
+[user]
+    name = Oystein Steimler
+    email = 
+
+[alias]
+    ci = commit
+    co = checkout
+    sd = show --pretty=format:%b
+    st = status
+    dom = diff origin master
+    diffc = diff --cached
+    diffo = diff origin..
+    new = diff master.. -R
+    topic = checkout master -b
+
+[color]
+    ui = true
