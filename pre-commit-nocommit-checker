@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# git pre-commit hook to test for the existence of a given keyword/stopword in the patch.
+#
+# Use this to annotate local config changes and debug fixtures to prevent them from being
+# committed to the repository.
+# 
+# Link/copy this file as .git/hooks/pre-commit to use it. To use it on all newly created
+# or cloned repositories, place it in your /usr/share/git-core/templates/hooks (or
+# a corresponding folder on your system)
+# 
+KEYWORD='NOCOMMIT';
+
+# Test for keyword in added lines of commit diff
+if [[ `git diff --cached | egrep "^\+" | grep $KEYWORD` ]]
+then
+    echo "Keyword $KEYWORD is present in the attempted  commit. This probably means you've added some changes not intended for the repository. Fix this and try again!";
+    exit 100;
+else
+    exit 0;
+fi
