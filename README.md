@@ -6,6 +6,8 @@ Stuff to help make everyday git'ing a bit more fun
 git-completion.bash can be found here:
 https://raw.github.com/git/git/master/contrib/completion/git-completion.bash
 
+The interpreter line must be updated. Normally to "#!/bin/bash"
+
 My local copy was fetched 25.05.2013
 
 OS X
