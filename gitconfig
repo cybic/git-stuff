@@ -7,11 +7,13 @@
     co = checkout
     sd = show --pretty=format:%b
     st = status
-    dom = diff origin master
+    dom = diff origin/master..HEAD
+    lom = log origin/master..HEAD
     diffc = diff --cached
     diffo = diff origin..
     new = diff master.. -R
     topic = checkout master -b
+    one = log --oneline
 
 [color]
     ui = true
