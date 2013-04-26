@@ -16,5 +16,6 @@ OS X
   GIT_PS1_SHOWDIRTYSTATE=true
   
   . /usr/local/sbin/git-completion.bash
+  . /usr/local/sbin/git-prompt.sh
   
   export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\]:\w$(__git_ps1)\[\033[0m\]\$ '
