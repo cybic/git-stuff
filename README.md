@@ -13,7 +13,7 @@ My local copy was fetched 25.05.2013
 OS X
 ----
 
-To get tab clometion and gitprompt, you need this in your `.bashrc` or equivalent:
+To get tab completion and gitprompt, you need this in your `.bashrc` or equivalent:
 
 ```bash
   GIT_PS1_SHOWDIRTYSTATE=true
