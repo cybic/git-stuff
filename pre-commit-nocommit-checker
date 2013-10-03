@@ -9,6 +9,8 @@
 # or cloned repositories, place it in your /usr/share/git-core/templates/hooks (or
 # a corresponding folder on your system)
 # 
+# Written by Oystein Steimler <oystein@nyvri.net> - Share it!
+# 
 KEYWORD='NOCOMMIT';
 
 # Test for keyword in added lines of commit diff
